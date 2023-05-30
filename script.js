@@ -1,6 +1,7 @@
 let arr = []
 let container = document.querySelector('.container')
 let modalImg = document.querySelector('#modal-img')
+let title = document.querySelector('#title')
 let modal = document.querySelector('.modal')
 let modalBg = document.querySelector('.modal-bg')
 let closeIcon = document.querySelector('.close-icon')
@@ -16,6 +17,7 @@ fetch('https://jsonplaceholder.typicode.com/photos')
             let img =  document.createElement('img')
 
             img.src = item.thumbnailUrl
+            title.innerHTML = item.title
 
 
             img.onclick = () => {
