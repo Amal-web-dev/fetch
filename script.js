@@ -29,6 +29,10 @@ fetch('https://jsonplaceholder.typicode.com/photos')
                modalBg.style.display = 'none'
             }
             
+            modalBg.onclick = () => {
+                modal.style.display = 'none'
+                modalBg.style.display = 'none'
+             }
 
             container.append(img)
         }
